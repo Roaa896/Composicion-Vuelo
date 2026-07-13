@@ -52,8 +52,15 @@ public class App {
         System.out.println("\nEstado actual de los asientos en " + vuelo2.getNumero() + ":");
         vuelo2.mostrarAsientos();
 
-        System.out.println("\nDesembarcando pasajero del asiento A6:");
+        System.out.println("\nDesembarcando todos los pasajeros:");
+        vuelo2.desembarcar("A1");
+        vuelo2.desembarcar("A2");
+        vuelo2.desembarcar("A3");
+        vuelo2.desembarcar("A4");
+        vuelo2.desembarcar("A5");
         vuelo2.desembarcar("A6");
+        vuelo2.desembarcar("A7");
+        vuelo2.desembarcar("A8");
 
         System.out.println("\nIntento de liberar un asiento que ya está libre:");
         vuelo2.desembarcar("A6");
