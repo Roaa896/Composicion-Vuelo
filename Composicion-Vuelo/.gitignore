@@ -1,0 +1,54 @@
+# Archivos de compilación y resultados de Java
+*.class
+*.log
+*.jar
+*.war
+*.ear
+*.nar
+
+# Carpetas de compilación
+target/
+build/
+bin/
+out/
+.gradle/
+.gradletasknamecache/
+
+# Archivos temporales de Eclipse
+.settings/
+.classpath
+.project
+.metadata
+.factorypath
+.loadpath
+*~.nib
+
+# Archivos temporales de IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+*.loc
+
+# Archivos de NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Configuración y extensiones de VS Code
+.vscode/
+.code-workspace
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Otros archivos residuales
+hs_err_pid*
+*.pid
+*.seed
+*.log
