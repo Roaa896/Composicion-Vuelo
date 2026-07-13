@@ -49,7 +49,7 @@ public class App {
         System.out.println("\nIntento de embarcar en un asiento inexistente:");
         vuelo2.embarcar("A12");
 
-        System.out.println("\nEstado actual de los asientos en " + vuelo2.getNumero() + ":");
+        System.out.println("\nEstado actual de los asientos en " + vuelo2.getNumero() + ": ");
         vuelo2.mostrarAsientos();
 
         System.out.println("\nDesembarcando todos los pasajeros:");
@@ -71,7 +71,7 @@ public class App {
         System.out.println("Información inicial del vuelo:");
         vuelo3.mostrarInfo();
 
-        System.out.println("\nLlenando algunos asientos del vuelo hacia " + vuelo3.getDestino() + ":");
+        System.out.println("\nLlenando algunos asientos del vuelo " + vuelo3.getNumero() + ": ");
         vuelo3.embarcar("A1");
         vuelo3.embarcar("A4");
         vuelo3.embarcar("A9");
