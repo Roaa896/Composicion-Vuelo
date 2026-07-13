@@ -6,7 +6,7 @@ public class App {
         Vuelo vuelo3 = new Vuelo("DI04", "Medellin", "Ciudad de Mexico", 10);
 
         // --- PRUEBAS CON EL VUELO 1 ---
-        System.out.println("\n=== PRUEBAS CON EL VUELO " + vuelo1.getNumero() + " ===");
+        System.out.println("\nPRUEBAS CON EL VUELO " + vuelo1.getNumero());
         System.out.println("Información inicial del vuelo:");
         vuelo1.mostrarInfo();
         
@@ -32,18 +32,22 @@ public class App {
 
 
         // --- PRUEBAS CON EL VUELO 2 ---
-        System.out.println("\n=== PRUEBAS CON EL VUELO " + vuelo2.getNumero() + " ===");
+        System.out.println("\nPRUEBAS CON EL VUELO " + vuelo2.getNumero());
         System.out.println("Información inicial del vuelo:");
         vuelo2.mostrarInfo();
 
         System.out.println("\nEmbarcando pasajeros en " + vuelo2.getNumero() + ":");
+        vuelo2.embarcar("A1");
+        vuelo2.embarcar("A2");
+        vuelo2.embarcar("A3");
+        vuelo2.embarcar("A4");
         vuelo2.embarcar("A5");
         vuelo2.embarcar("A6");
         vuelo2.embarcar("A7");
         vuelo2.embarcar("A8");
 
         System.out.println("\nIntento de embarcar en un asiento inexistente:");
-        vuelo2.embarcar("A12"); // Este vuelo solo tiene capacidad hasta el A8
+        vuelo2.embarcar("A12");
 
         System.out.println("\nEstado actual de los asientos en " + vuelo2.getNumero() + ":");
         vuelo2.mostrarAsientos();
@@ -52,11 +56,11 @@ public class App {
         vuelo2.desembarcar("A6");
 
         System.out.println("\nIntento de liberar un asiento que ya está libre:");
-        vuelo2.desembarcar("A1");
+        vuelo2.desembarcar("A6");
 
 
         // --- PRUEBAS CON EL VUELO 3 ---
-        System.out.println("\n=== PRUEBAS CON EL VUELO " + vuelo3.getNumero() + " ===");
+        System.out.println("\n PRUEBAS CON EL VUELO " + vuelo3.getNumero());
         System.out.println("Información inicial del vuelo:");
         vuelo3.mostrarInfo();
 
@@ -65,6 +69,14 @@ public class App {
         vuelo3.embarcar("A4");
         vuelo3.embarcar("A9");
         vuelo3.embarcar("A10");
+
+        System.out.println("\nDesembarcando pasajeros de los asientos A4 y A9:");
+        vuelo3.desembarcar("A4");
+        vuelo3.desembarcar("A9");
+
+        System.out.println("\nDesembarcando pasajero del asiento A2 asiento no ocupado:");
+        vuelo3.desembarcar("A2");
+
 
         System.out.println("\nEstado final de los asientos en " + vuelo3.getNumero() + ":");
         vuelo3.mostrarAsientos();
