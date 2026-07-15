@@ -1,6 +1,7 @@
 *INTEGRANTES*  
 
 - Gabriel Santiago Roa Salamanca - 202610062615
+- Nicoll Dayana Posso Tapiero - 202610034615
 
 *UML*  
 
