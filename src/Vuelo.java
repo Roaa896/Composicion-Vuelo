@@ -70,4 +70,3 @@ public class Vuelo {
         System.out.println("El asiento " + codigoAsiento + " no existe en este vuelo." + numero + ".");
     }
 }
-
